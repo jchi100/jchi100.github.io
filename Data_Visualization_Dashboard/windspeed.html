@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Visualization Dashboard- (Plot WindSpeed)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="weatherstyle.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+        <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a href="index.html" class='active'>
+                    <button type="button" class="btn btn-info">Latitude</button>
+                  </a>
+                  </li>
+           
+        
+        </ul>
+        
+            <button class="navbar-toggler visible-xs" type="button" data-toggle="collapse" data-target="#containerNavbar" >
+              <span class="glyphicon glyphicon-th-list align-bottom"></span>
+            </button>
+            
+        <div class="collapse navbar-collapse" id="containerNavbar">
+              <ul class="nav navbar-nav mr-auto navbar-right">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots <span class = "caret"></span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualization_temperature.html">Max Temperature</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                      </div>
+                  </li>
+                <li class="active"><a href="comparison.html">Comparison <span class="sr-only">(current)</span></a></li>
+                <li><a href="data.html">Data </a></li>
+              </ul>
+             
+        </div>
+      </div>
+
+</nav>
+  
+<div class="containerNew">   
+    <br>
+  <div class="row content">
+    
+    <div class="col-sm-8 text-left"> 
+       <div class="well">
+         <p class="mysummarystyle">Wind Speed</p>
+         <hr>
+         <div class="row">
+           <div class="col-xs-12 col-sm-12">
+                  <img  class="img-responsive" style="float: left" src="Fig4.png" alt=""></img>
+              
+              </div>
+              
+          </div>
+          <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                      <p>
+                          Base on City Latitude vs. Wind Speed chart, in April,
+                           the wind speed is relatively moderate between 
+                           the equator and the norther hemisphere and between the equator and 
+                           southern hemisphere.  No gusty wind more than 35 mph during April days.
+                      </p>
+                   
+                   </div>
+                   
+               </div>
+         </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well" class="mr-2">
+        <div class="row">
+           <div class="col text-center">
+            <p class="mytextstyle">Visualization</p>
+            </div>
+            <hr>
+        </div>
+       <br>
+        <div class="row">
+          <div class="col-sm-6">
+             
+            <img  class="img-thumbnail" src="Fig1.png" alt="" ></img>
+                
+          </div>
+          <div class="col-sm-6">
+            <img  class="img-thumbnail" src="Fig2.png" alt="" class="img-responsive"></img>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <img  class="img-thumbnail" src="Fig3.png" alt=""></img>
+        
+          </div>
+          <div class="col-sm-6">
+            <img  class="img-thumbnail  img-thumbnailactive" src="Fig4.png" alt=""></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Rutger's Data Science Boot Camp May 2018</p>
+</footer>
+
+</body>
+</html>
