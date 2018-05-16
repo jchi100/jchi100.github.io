@@ -1,0 +1,55 @@
+.form-control {
+  display: inline-block;
+  width: 250px;
+  margin-top: 50px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background: url('ufoimage3.jpg');
+  background-repeat: no-repeat;
+  background-size: 600px 250px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+.btn-info {
+color: #fff;
+background-color: rgb(28, 64, 119);
+border-color: rgb(28, 64, 119);
+font-size: 18px;
+font-weight: bold;
+font-family: "Times New Roman", Times, serif;
+margin-left: 20px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  
+  
+  .row.content {height:auto;} 
+}
+
+.containerNew {
+    background-color: #dfd7d74b;
+    margin-right: 10;
+    margin-left: 10;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+span.separator{
+  padding:0 10px;
+  color:black;
+  width: 5px;
+    height: 12px;
+}
