@@ -1,0 +1,52 @@
+﻿id,state,abbr,poverty,no_healthcare,obesity,household_income
+1,Alabama,AL,19.3,13.9,33.5,42830
+2,Alaska,AK,11.2,15,29.7,71583
+4,Arizona,AZ,18.2,14.4,28.9,50068
+5,Arkansas,AR,18.9,16.3,35.9,41262
+6,California,CA,16.4,14.8,24.7,61933
+8,Colorado,CO,12,12.8,21.3,61303
+9,Connecticut,CT,10.8,8.7,26.3,70048
+10,Delaware,DE,12.5,8.7,30.7,59716
+11,District of Columbia,DC,17.7,8.3,21.7,71648
+12,Florida,FL,16.5,17.6,26.2,47463
+13,Georgia,GA,18.3,20.9,30.5,49321
+15,Hawaii,HI,11.4,8.1,22.1,69592
+16,Idaho,ID,14.8,16.5,28.9,47861
+17,Illinois,IL,14.4,11.9,29.3,57444
+18,Indiana,IN,15.2,14.8,32.7,49446
+19,Iowa,IA,12.2,7.7,30.9,53712
+20,Kansas,KS,13.6,14.5,31.3,52504
+21,Kentucky,KY,19.1,10,31.6,42958
+22,Louisiana,LA,19.8,18.7,34.9,44555
+23,Maine,ME,14.1,11,28.2,49462
+24,Maryland,MD,10.1,9.2,29.6,73971
+25,Massachusetts,MA,11.6,4.6,23.3,69160
+26,Michigan,MI,16.2,10.3,30.7,49847
+27,Minnesota,MN,11.5,7.3,27.6,61481
+28,Mississippi,MS,21.5,18.8,35.5,39680
+29,Missouri,MO,15.5,12.9,30.2,48363
+30,Montana,MT,15.4,12.9,26.4,46328
+31,Nebraska,NE,12.4,12.4,30.2,52686
+32,Nevada,NV,15.2,17.1,27.7,51450
+33,New Hampshire,NH,9.2,11.4,27.4,66532
+34,New Jersey,NJ,11.1,12.5,26.9,71919
+35,New Mexico,NM,21.3,15.4,28.4,44803
+36,New York,NY,15.9,12.3,27,58878
+37,North Carolina,NC,17.2,16.1,29.7,46556
+38,North Dakota,ND,11.5,8.8,32.2,59029
+39,Ohio,OH,15.8,10.2,32.6,49308
+40,Oklahoma,OK,16.6,13.9,33,47529
+41,Oregon,OR,16.6,11,27.9,51075
+42,Pennsylvania,PA,13.6,10.1,30.2,53234
+44,Rhode Island,RI,14.3,8,27,54891
+45,South Carolina,SC,18,17.1,32.1,45238
+46,South Dakota,SD,14.2,9.9,29.8,50979
+47,Tennessee,TN,18.3,14.2,31.2,44361
+48,Texas,TX,17.2,24.9,31.9,53035
+49,Utah,UT,11.7,13.9,25.7,60922
+50,Vermont,VT,12.2,6.7,24.8,54166
+51,Virginia,VA,11.8,13.1,28.5,64902
+53,Washington,WA,13.2,10.7,27.3,61366
+54,West Virginia,WV,18.3,10.1,35.7,41059
+55,Wisconsin,WI,13.2,8.5,31.2,52622
+56,Wyoming,WY,11.2,15.1,29.5,57055
