@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3Times</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+ 
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<h1>Data Journalism</h1><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="iframeContainer">
+					
+					<div class="chart">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="article">
+					<div class="title"><p>What Does Census Data Tell Us</p></div>
+						<p>DATA is a trendy name nowadays.  Everywhere you go, people talk about big data,
+						 data science...  We are becoming more interested in data, because data can be analyzed 
+						 for insights that give us more information and lead to better decisions.
+	 					 Out of all kinds of data, national level census data is more related to each of us,
+						which is used to plan the provision of health care, education, employment, transport, etc.  
+						</p>
+						<p>My analyse of 2014 census data focuses on the relation among Lacks Health Insurance, Poverty, 
+							Obesity, Median Household Income.  The combinaiton of these four categories are: Poverty vs.
+							 Lacks Health Insurance, Poverty vs. Obesity, Median Household Income vs. Obesity, and Median
+							  Household Income vs. Lacks Health Insurance.  The following is what census data tells us based on the chart.
+						</p>
+						<p>Poverty vs. Lacks Health Insurance</p>
+							<p>The higher percentage of poverty among the states, the higher percentage of lacks health insurance.  
+								Massachussets is an exception with 11.6% of poverty, only 4.6% of lacks health insurance.
+							</p>
+						<p>Poverty vs. Obesity</p>
+							<p>The chart shows that obesity isn't that related to poverty.  The lowerest percentage of 
+								obesity is 21.3% across the nation, that means, at least, there is an overweight one out of every five individuals.
+							</p>
+						<p>Median Household Income vs. Obesity</p>
+							<p>Median Household income slightly has a relation with obesity.  For example, Mississippi's median household income is $39680, 
+								its obesity percentage is 35.5%; Maryland's median household income is $73971, its obesity percentage is 29.6%.  
+								 Overall, obesity is an big issue regardless of household income.
+							</p>
+						<p>Median Household Income vs. Lacks Health Insurance</p>
+							<p>The higher of median household income, the lower of percentage of lacks health insurance.  Texas is an outlier, 
+								with $53035 median household income and the highest 24.9% of lacks health insurance.
+							</p>
+						<p>The chart tells us that obesity is becoming a big social problem.  For our health, we should pay more 
+							attention to our daily diet and should do more excises.  We should improve our health insurance system to cover 
+							more people in poverty as well.  About health insurance, Massachussets is a very good example.
+						</p>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./assets/js/app.js"></script>
+		<!-- Footer-->
+	<div id="footer">
+		<p>Rutger's Data Science Bootcamp</p>
+	</div>
+
+</body>
+</html>
