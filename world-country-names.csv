@@ -1,0 +1,253 @@
+id,name,gdp
+-1,Northern Cyprus,
+-2,Kosovo,6649888889
+-3,Somaliland,
+4,Afghanistan,19469022208
+8,Albania,11863865978
+10,Antarctica,
+12,Algeria,1.59049E+11
+16,American Samoa,658000000
+20,Andorra,2858517699
+24,Angola,95335111741
+28,Antigua and Barbuda,1460144704
+31,Azerbaijan,37847715736
+32,Argentina,5.45476E+11
+36,Australia,1.20462E+12
+40,Austria,3.908E+11
+44,Bahamas,
+48,Bahrain,32179069149
+50,Bangladesh,2.21415E+11
+51,Armenia,10572298342
+52,Barbados,4529050000
+56,Belgium,4.67956E+11
+60,Bermuda,
+64,Bhutan,2212638830
+68,Bolivia,33806395514
+70,Bosnia and Herzegovina,16910277134
+72,Botswana,15581137274
+74,Bouvet Island,
+76,Brazil,1.79619E+12
+84,Belize,1741100000
+86,British Indian Ocean Territory,
+90,Solomon Islands,1202125000
+92,Virgin Islands,
+96,Brunei Darussalam,11400653732
+100,Bulgaria,53237882473
+104,Myanmar,63225097051
+108,Burundi,3007029030
+112,Belarus,47407217531
+116,Cambodia,20016747754
+120,Cameroon,32217497470
+124,Canada,1.53577E+12
+132,Cape Verde,
+136,Cayman Islands,
+140,Central African Republic,1756124677
+144,Sri Lanka,81321876307
+148,Chad,9600761474
+152,Chile,2.47028E+11
+156,China,1.11991E+13
+158,Taiwan,
+162,Christmas Island,
+166,Cocos (Keeling) Islands,
+170,Colombia,2.82463E+11
+174,Comoros,616654490.4
+175,Mayotte,
+178,Congo,
+180,Congo,
+184,Cook Islands,
+188,Costa Rica,57435507212
+191,Croatia,50714957391
+192,Cuba,
+196,Cyprus,20047013274
+203,Czech Republic,1.95305E+11
+204,Benin,8583031398
+208,Denmark,3.069E+11
+212,Dominica,581484031.9
+214,Dominican Republic,71583553488
+218,Ecuador,98613972000
+222,El Salvador,26797470000
+226,Equatorial Guinea,10684804794
+231,Ethiopia,72374224249
+232,Eritrea,
+233,Estonia,23337907619
+234,Faroe Islands,
+238,Falkland Islands (Malvinas),
+239,South Georgia and the South Sandwich Islands,
+242,Fiji,4703632978
+246,Finland,2.38678E+11
+248,Åland Islands,
+250,France,2.46545E+12
+254,French Guiana,
+258,French Polynesia,
+260,French Southern Territories,
+262,Djibouti,
+266,Gabon,14213558130
+268,Georgia,14378016729
+270,Gambia,
+275,Palestinian Territory,
+276,Germany,3.4778E+12
+288,Ghana,42689783734
+292,Gibraltar,
+296,Kiribati,181551484.9
+300,Greece,1.92691E+11
+304,Greenland,
+308,Grenada,1056188593
+312,Guadeloupe,
+316,Guam,5793000000
+320,Guatemala,68763255964
+324,Guinea,8200248003
+328,Guyana,3502397094
+332,Haiti,8022638722
+334,Heard Island and McDonald Islands,
+336,Holy See (Vatican City State),
+340,Honduras,21516938910
+344,Hong Kong,
+348,Hungary,1.25817E+11
+352,Iceland,20304098101
+356,India,2.26379E+12
+360,Indonesia,9.32259E+11
+364,Iran,
+368,Iraq,1.71489E+11
+372,Ireland,3.04819E+11
+376,Israel,3.17745E+11
+380,Italy,1.85938E+12
+384,Côte d'Ivoire,
+388,Jamaica,14056908749
+392,Japan,4.94927E+12
+398,Kazakhstan,1.37278E+11
+400,Jordan,38654727746
+404,Kenya,70529014778
+408,Korea,
+410,Korea,
+414,Kuwait,1.10876E+11
+417,Kyrgyzstan,
+418,Lao People's Democratic Republic,
+422,Lebanon,49598825982
+426,Lesotho,2291321667
+428,Latvia,27572698482
+430,Liberia,2101000000
+434,Libya,
+438,Liechtenstein,
+440,Lithuania,42773029835
+442,Luxembourg,58631324559
+446,Macao,
+450,Madagascar,10001193420
+454,Malawi,5433038647
+458,Malaysia,2.96536E+11
+462,Maldives,4224209599
+466,Mali,14034980334
+470,Malta,10999047580
+474,Martinique,
+478,Mauritania,4739298730
+480,Mauritius,12168437744
+484,Mexico,1.04692E+12
+492,Monaco,
+496,Mongolia,11183458131
+498,Moldova,6749515655
+499,Montenegro,4374127212
+500,Montserrat,
+504,Morocco,1.03606E+11
+508,Mozambique,11014858592
+512,Oman,66293368010
+516,Namibia,10947880690
+520,Nauru,102060129.6
+524,Nepal,21131983246
+528,Netherlands,7.77228E+11
+531,Curaçao,
+533,Aruba,
+534,Sint Maarten (Dutch part),
+535,Bonaire,
+540,New Caledonia,
+548,Vanuatu,773502895.9
+554,New Zealand,1.84971E+11
+558,Nicaragua,13230844687
+562,Niger,7528387858
+566,Nigeria,4.04653E+11
+570,Niue,
+574,Norfolk Island,
+578,Norway,3.71075E+11
+580,Northern Mariana Islands,1242000000
+581,United States Minor Outlying Islands,
+583,Micronesia,
+584,Marshall Islands,194497900
+585,Palau,310248300
+586,Pakistan,2.78913E+11
+591,Panama,55187700000
+598,Papua New Guinea,20213214172
+600,Paraguay,27424071383
+604,Peru,1.92207E+11
+608,Philippines,3.04905E+11
+612,Pitcairn,
+616,Poland,4.71364E+11
+620,Portugal,2.05184E+11
+624,Guinea-Bissau,1164944510
+626,Timor-Leste,1782974000
+630,Puerto Rico,1.05035E+11
+634,Qatar,1.52452E+11
+638,Réunion,
+642,Romania,1.87592E+11
+643,Russian Federation,1.28316E+12
+646,Rwanda,8376048905
+652,Saint Barthélemy,
+654,Saint Helena,
+659,Saint Kitts and Nevis,
+660,Anguilla,
+662,Saint Lucia,
+663,Saint Martin (French part),
+666,Saint Pierre and Miquelon,
+670,Saint Vincent and the Grenadines,
+674,San Marino,1590707965
+678,Sao Tome and Principe,342781715.5
+682,Saudi Arabia,6.46438E+11
+686,Senegal,14683697631
+688,Serbia,38299854688
+690,Seychelles,1427323889
+694,Sierra Leone,3736588554
+702,Singapore,2.96976E+11
+703,Slovakia,
+704,Viet Nam,
+705,Slovenia,44708598649
+706,Somalia,6217000000
+710,South Africa,2.95456E+11
+716,Zimbabwe,16619960402
+724,Spain,1.23726E+12
+728,South Sudan,
+729,Sudan,95584380032
+732,Western Sahara,
+740,Suriname,3278425328
+744,Svalbard and Jan Mayen,
+748,Swaziland,3720649375
+752,Sweden,5.1446E+11
+756,Switzerland,6.68851E+11
+760,Syrian Arab Republic,
+762,Tajikistan,6951657159
+764,Thailand,4.07026E+11
+768,Togo,4399995987
+772,Tokelau,
+776,Tonga,401562006.2
+780,Trinidad and Tobago,21894706041
+784,United Arab Emirates,3.48743E+11
+788,Tunisia,42062549395
+792,Turkey,8.63712E+11
+795,Turkmenistan,36179885714
+796,Turks and Caicos Islands,
+798,Tuvalu,34218878.44
+800,Uganda,24078931933
+804,Ukraine,93270479389
+807,Macedonia,
+818,Egypt,
+826,United Kingdom,2.65085E+12
+831,Guernsey,
+832,Jersey,
+833,Isle of Man,
+834,Tanzania,47340071107
+840,United States,1.86245E+13
+850,Virgin Islands,
+854,Burkina Faso,11693235542
+858,Uruguay,52419720714
+860,Uzbekistan,67220335570
+862,Venezuela,
+876,Wallis and Futuna,
+882,Samoa,786356314.8
+887,Yemen,
+894,Zambia,21063989683
