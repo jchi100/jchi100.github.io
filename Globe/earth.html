@@ -84,7 +84,7 @@ function enter(country) {
 
   current.text(country && country.name || '');
   currentgdp.text("GDP: " + country.gdp);
-  currentpopulation.text("Population: " + country.population.toString());
+  currentpopulation.text("Population: " + parseInt(country.population);
 }
 
 function leave(country) {
