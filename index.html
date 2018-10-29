@@ -1,123 +1,1476 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
 <head>
-  <title>Data Visualization Dashboard</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="weatherstyle.css">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="VisualDemo_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Yanzhi Hsu</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Yanzhi Hsu</o:LastAuthor>
+  <o:Revision>14</o:Revision>
+  <o:TotalTime>100</o:TotalTime>
+  <o:Created>2018-10-29T01:02:00Z</o:Created>
+  <o:LastSaved>2018-10-29T01:26:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>167</o:Words>
+  <o:Characters>957</o:Characters>
+  <o:Company>Hewlett-Packard Company</o:Company>
+  <o:Lines>7</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1122</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="VisualDemo_files/themedata.thmx">
+<link rel=colorSchemeMapping href="VisualDemo_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>120</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:11.0in 8.5in;
+	mso-page-orientation:landscape;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1647856764;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-280173688 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:1653944776;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1794117264 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:59;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableLightShadingAccent1
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	border-top:solid #4F81BD 1.0pt;
+	mso-border-top-themecolor:accent1;
+	border-left:none;
+	border-bottom:solid #4F81BD 1.0pt;
+	mso-border-bottom-themecolor:accent1;
+	border-right:none;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+table.MsoTableLightShadingAccent1FirstRow
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-table-condition:first-row;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:cell-none;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightShadingAccent1LastRow
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-table-condition:last-row;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:cell-none;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightShadingAccent1FirstCol
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-table-condition:first-column;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightShadingAccent1LastCol
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-table-condition:last-column;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightShadingAccent1OddColumn
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-table-condition:odd-column;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#D3DFEE;
+	mso-tstyle-shading-themecolor:accent1;
+	mso-tstyle-shading-themetint:63;
+	mso-tstyle-border-left:cell-none;
+	mso-tstyle-border-right:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;}
+table.MsoTableLightShadingAccent1OddRow
+	{mso-style-name:"Light Shading - Accent 1";
+	mso-table-condition:odd-row;
+	mso-style-priority:60;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#D3DFEE;
+	mso-tstyle-shading-themecolor:accent1;
+	mso-tstyle-shading-themetint:63;
+	mso-tstyle-border-left:cell-none;
+	mso-tstyle-border-right:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;}
+table.MsoTableLightListAccent1
+	{mso-style-name:"Light List - Accent 1";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	border:solid #4F81BD 1.0pt;
+	mso-border-themecolor:accent1;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableLightListAccent1FirstRow
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:first-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#4F81BD;
+	mso-tstyle-shading-themecolor:accent1;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1LastRow
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:last-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:2.25pt double #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:1.0pt solid #4F81BD;
+	mso-tstyle-border-left-themecolor:accent1;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:1.0pt solid #4F81BD;
+	mso-tstyle-border-right-themecolor:accent1;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1FirstCol
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:first-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1LastCol
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:last-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1OddColumn
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:odd-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:1.0pt solid #4F81BD;
+	mso-tstyle-border-left-themecolor:accent1;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:1.0pt solid #4F81BD;
+	mso-tstyle-border-right-themecolor:accent1;}
+table.MsoTableLightListAccent1OddRow
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:odd-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:1.0pt solid #4F81BD;
+	mso-tstyle-border-left-themecolor:accent1;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:1.0pt solid #4F81BD;
+	mso-tstyle-border-right-themecolor:accent1;}
+table.MsoTableLightListAccent3
+	{mso-style-name:"Light List - Accent 3";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	border:solid #9BBB59 1.0pt;
+	mso-border-themecolor:accent3;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableLightListAccent3FirstRow
+	{mso-style-name:"Light List - Accent 3";
+	mso-table-condition:first-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#9BBB59;
+	mso-tstyle-shading-themecolor:accent3;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent3LastRow
+	{mso-style-name:"Light List - Accent 3";
+	mso-table-condition:last-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:2.25pt double #9BBB59;
+	mso-tstyle-border-top-themecolor:accent3;
+	mso-tstyle-border-left:1.0pt solid #9BBB59;
+	mso-tstyle-border-left-themecolor:accent3;
+	mso-tstyle-border-bottom:1.0pt solid #9BBB59;
+	mso-tstyle-border-bottom-themecolor:accent3;
+	mso-tstyle-border-right:1.0pt solid #9BBB59;
+	mso-tstyle-border-right-themecolor:accent3;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent3FirstCol
+	{mso-style-name:"Light List - Accent 3";
+	mso-table-condition:first-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent3LastCol
+	{mso-style-name:"Light List - Accent 3";
+	mso-table-condition:last-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent3OddColumn
+	{mso-style-name:"Light List - Accent 3";
+	mso-table-condition:odd-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #9BBB59;
+	mso-tstyle-border-top-themecolor:accent3;
+	mso-tstyle-border-left:1.0pt solid #9BBB59;
+	mso-tstyle-border-left-themecolor:accent3;
+	mso-tstyle-border-bottom:1.0pt solid #9BBB59;
+	mso-tstyle-border-bottom-themecolor:accent3;
+	mso-tstyle-border-right:1.0pt solid #9BBB59;
+	mso-tstyle-border-right-themecolor:accent3;}
+table.MsoTableLightListAccent3OddRow
+	{mso-style-name:"Light List - Accent 3";
+	mso-table-condition:odd-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #9BBB59;
+	mso-tstyle-border-top-themecolor:accent3;
+	mso-tstyle-border-left:1.0pt solid #9BBB59;
+	mso-tstyle-border-left-themecolor:accent3;
+	mso-tstyle-border-bottom:1.0pt solid #9BBB59;
+	mso-tstyle-border-bottom-themecolor:accent3;
+	mso-tstyle-border-right:1.0pt solid #9BBB59;
+	mso-tstyle-border-right-themecolor:accent3;}
+table.MsoTableLightListAccent5
+	{mso-style-name:"Light List - Accent 5";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	border:solid #4BACC6 1.0pt;
+	mso-border-themecolor:accent5;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableLightListAccent5FirstRow
+	{mso-style-name:"Light List - Accent 5";
+	mso-table-condition:first-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#4BACC6;
+	mso-tstyle-shading-themecolor:accent5;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent5LastRow
+	{mso-style-name:"Light List - Accent 5";
+	mso-table-condition:last-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:2.25pt double #4BACC6;
+	mso-tstyle-border-top-themecolor:accent5;
+	mso-tstyle-border-left:1.0pt solid #4BACC6;
+	mso-tstyle-border-left-themecolor:accent5;
+	mso-tstyle-border-bottom:1.0pt solid #4BACC6;
+	mso-tstyle-border-bottom-themecolor:accent5;
+	mso-tstyle-border-right:1.0pt solid #4BACC6;
+	mso-tstyle-border-right-themecolor:accent5;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent5FirstCol
+	{mso-style-name:"Light List - Accent 5";
+	mso-table-condition:first-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent5LastCol
+	{mso-style-name:"Light List - Accent 5";
+	mso-table-condition:last-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent5OddColumn
+	{mso-style-name:"Light List - Accent 5";
+	mso-table-condition:odd-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4BACC6;
+	mso-tstyle-border-top-themecolor:accent5;
+	mso-tstyle-border-left:1.0pt solid #4BACC6;
+	mso-tstyle-border-left-themecolor:accent5;
+	mso-tstyle-border-bottom:1.0pt solid #4BACC6;
+	mso-tstyle-border-bottom-themecolor:accent5;
+	mso-tstyle-border-right:1.0pt solid #4BACC6;
+	mso-tstyle-border-right-themecolor:accent5;}
+table.MsoTableLightListAccent5OddRow
+	{mso-style-name:"Light List - Accent 5";
+	mso-table-condition:odd-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4BACC6;
+	mso-tstyle-border-top-themecolor:accent5;
+	mso-tstyle-border-left:1.0pt solid #4BACC6;
+	mso-tstyle-border-left-themecolor:accent5;
+	mso-tstyle-border-bottom:1.0pt solid #4BACC6;
+	mso-tstyle-border-bottom-themecolor:accent5;
+	mso-tstyle-border-right:1.0pt solid #4BACC6;
+	mso-tstyle-border-right-themecolor:accent5;}
+table.MsoTableLightListAccent6
+	{mso-style-name:"Light List - Accent 6";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	border:solid #F79646 1.0pt;
+	mso-border-themecolor:accent6;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableLightListAccent6FirstRow
+	{mso-style-name:"Light List - Accent 6";
+	mso-table-condition:first-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#F79646;
+	mso-tstyle-shading-themecolor:accent6;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent6LastRow
+	{mso-style-name:"Light List - Accent 6";
+	mso-table-condition:last-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:2.25pt double #F79646;
+	mso-tstyle-border-top-themecolor:accent6;
+	mso-tstyle-border-left:1.0pt solid #F79646;
+	mso-tstyle-border-left-themecolor:accent6;
+	mso-tstyle-border-bottom:1.0pt solid #F79646;
+	mso-tstyle-border-bottom-themecolor:accent6;
+	mso-tstyle-border-right:1.0pt solid #F79646;
+	mso-tstyle-border-right-themecolor:accent6;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent6FirstCol
+	{mso-style-name:"Light List - Accent 6";
+	mso-table-condition:first-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent6LastCol
+	{mso-style-name:"Light List - Accent 6";
+	mso-table-condition:last-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent6OddColumn
+	{mso-style-name:"Light List - Accent 6";
+	mso-table-condition:odd-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #F79646;
+	mso-tstyle-border-top-themecolor:accent6;
+	mso-tstyle-border-left:1.0pt solid #F79646;
+	mso-tstyle-border-left-themecolor:accent6;
+	mso-tstyle-border-bottom:1.0pt solid #F79646;
+	mso-tstyle-border-bottom-themecolor:accent6;
+	mso-tstyle-border-right:1.0pt solid #F79646;
+	mso-tstyle-border-right-themecolor:accent6;}
+table.MsoTableLightListAccent6OddRow
+	{mso-style-name:"Light List - Accent 6";
+	mso-table-condition:odd-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #F79646;
+	mso-tstyle-border-top-themecolor:accent6;
+	mso-tstyle-border-left:1.0pt solid #F79646;
+	mso-tstyle-border-left-themecolor:accent6;
+	mso-tstyle-border-bottom:1.0pt solid #F79646;
+	mso-tstyle-border-bottom-themecolor:accent6;
+	mso-tstyle-border-right:1.0pt solid #F79646;
+	mso-tstyle-border-right-themecolor:accent6;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
-<body>
-  
-    <nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
-        <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active">
-                <a href="index.html" class='active'>
-                    <button type="button" class="btn btn-info">Latitude</button>
-                  </a>
-                  </li>
-           
-        
-        </ul>
-        
-            <button class="navbar-toggler visible-xs" type="button" data-toggle="collapse" data-target="#containerNavbar" >
-              <span class="glyphicon glyphicon-th-list align-bottom"></span>
-            </button>
-            
-        <div class="collapse navbar-collapse" id="containerNavbar">
-              <ul class="nav navbar-nav mr-auto navbar-right">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots <span class = "caret"></span>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="visualization_temperature.html">Max Temperature</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                      </div>
-                  </li>
-                <li class="active"><a href="comparison.html">Comparison <span class="sr-only">(current)</span></a></li>
-                <li><a href="data.html">Data </a></li>
-              </ul>
-             
-        </div>
-      </div>
 
-</nav>
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
 
-  
-<div class="containerNew">   
-    <br><br><br>
-  <div class="row content">
-    
-    <div class="col-sm-8 text-left"> 
-       <div class="well">
-         <p class="mysummarystyle">Summary: Latitude vs. X</p>
-         <hr>
-         <div class="row">
-           <div class="col-xs-12 col-sm-12">
-                  <img  class="img-responsive" style="float: left" src="Fig1.png" alt=""></img>
-              
-                <p>
-                  The purpose of this project was to analyze how weather 
-                  changes as you get colser to the equater.  To accomplish this analysis,
-                  we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                  <br>
-                  After Assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                   Factors we looked at included temperature, cloudiness, wind speed, and humidity.  this
-                   site provides the source data and visualizations created as part of the analysis, as well as explanation
-                   and descriptions of any trends and correlations witnessed.
-                </p>
-                
-              </div>
-              
-          </div>
-           
-         </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="well" class="mr-2">
-        <div class="row">
-           <div class="col text-center">
-            <p class="mytextstyle">Visualization</p>
-            </div>
-            <hr>
-        </div>
-       <br>
-        <div class="row">
-          <div class="col-sm-6">
-            <img  class="img-thumbnail" src="Fig1.png" alt="" class="img-responsive"></img>
-          </div>
-          <div class="col-sm-6">
-            <img  class="img-thumbnail" src="Fig2.png" alt="" class="img-responsive"></img>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-sm-6">
-            <img  class="img-thumbnail" src="Fig3.png" alt=""></img>
-        
-          </div>
-          <div class="col-sm-6">
-            <img  class="img-thumbnail" src="Fig4.png" alt=""></img>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center'>Visualization Demonstration</h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div align=center>
+
+<table class=MsoTableLightListAccent5 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-border-alt:solid #4BACC6 1.0pt;mso-border-themecolor:accent5;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 5.4pt 0in 5.4pt' table-layout="fixed;">
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes'>
+  <td width=338 valign=top style='width:202.95pt;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;border-left:solid #4BACC6 1.0pt;mso-border-left-themecolor:
+  accent5;border-bottom:none;border-right:none;background:#4BACC6;mso-background-themecolor:
+  accent5;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt;line-height:normal;
+  mso-yfti-cnfc:5'><b><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
+  color:white;mso-themecolor:background1'>Project<o:p></o:p></span></b></p>
+  </td>
+  <td width=98 valign=top style='width:58.95pt;border:none;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;background:#4BACC6;mso-background-themecolor:
+  accent5;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:1'><span class=SpellE><b><span
+  style='font-size:12.0pt;mso-bidi-font-size:11.0pt;color:white;mso-themecolor:
+  background1'>Github</span></b></span><b><span style='font-size:12.0pt;
+  mso-bidi-font-size:11.0pt;color:white;mso-themecolor:background1'><o:p></o:p></span></b></p>
+  </td>
+  <td width=203 valign=top style='width:121.5pt;border:none;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;background:#4BACC6;mso-background-themecolor:
+  accent5;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt;line-height:normal;
+  mso-yfti-cnfc:1'><b><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
+  color:white;mso-themecolor:background1'>Technical Highlights<o:p></o:p></span></b></p>
+  </td>
+  <td width=398 valign=top style='width:238.5pt;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;border-left:none;border-bottom:none;
+  border-right:solid #4BACC6 1.0pt;mso-border-right-themecolor:accent5;
+  background:#4BACC6;mso-background-themecolor:accent5;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt;line-height:normal;
+  mso-yfti-cnfc:1'><b><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
+  color:white;mso-themecolor:background1'>Notes<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0'>
+  <td width=338 valign=top style='width:202.95pt;border:solid #4BACC6 1.0pt;
+  mso-border-themecolor:accent5;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:68'><b><span style='font-size:12.0pt;mso-bidi-font-size:
+  11.0pt;color:#365F91'><a href="https://jchi100.github.io/Tableau_CityBike/"><span
+  style='color:#365F91'>New York City<span style='mso-no-proof:yes'> Bike Data
+  Visualization</span></span></a><o:p></o:p></span></b></p>
+  </td>
+  <td width=98 valign=top style='width:58.95pt;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;border-left:none;border-bottom:solid #4BACC6 1.0pt;
+  mso-border-bottom-themecolor:accent5;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:11.0pt;color:#4BACC6'><a
+  href="https://github.com/jchi100/Tableau_CityBikeAnalytics"><span
+  style='color:#4BACC6'>[Source]</span></a><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:11.0pt;color:#4BACC6'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width=203 valign=top style='width:121.5pt;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;border-left:none;border-bottom:solid #4BACC6 1.0pt;
+  mso-border-bottom-themecolor:accent5;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'>Tableau, Python</p>
+  </td>
+  <td width=398 valign=top style='width:238.5pt;border:solid #4BACC6 1.0pt;
+  mso-border-themecolor:accent5;border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=338 valign=top style='width:202.95pt;border:none;border-left:solid #4BACC6 1.0pt;
+  mso-border-left-themecolor:accent5;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:4'><b><span style='font-size:12.0pt;mso-bidi-font-size:
+  11.0pt;color:#365F91'><a href="https://jchi100.github.io/Data_journalism/"><span
+  style='color:#365F91'>Data Journalism</span></a><o:p></o:p></span></b></p>
+  </td>
+  <td width=98 valign=top style='width:58.95pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt;color:#4BACC6'><a
+  href="https://github.com/jchi100/jchi100.github.io/tree/master/Data_journalism"><span
+  style='color:#4BACC6'>[Source]</span></a><o:p></o:p></span></b></p>
+  </td>
+  <td width=203 valign=top style='width:121.5pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>D3</p>
+  </td>
+  <td width=398 valign=top style='width:238.5pt;border:none;border-right:solid #4BACC6 1.0pt;
+  mso-border-right-themecolor:accent5;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-.25in;line-height:normal;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+  Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+  mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>1.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt'>Click on the axis label to
+  change variables to be analyzed<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-.25in;line-height:normal;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+  Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+  mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>2.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt'>Mouse over bubble to show
+  data details<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=338 valign=top style='width:202.95pt;border:solid #4BACC6 1.0pt;
+  mso-border-themecolor:accent5;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:68'><b><span style='font-size:12.0pt;mso-bidi-font-size:
+  11.0pt;color:#365F91'><a
+  href="https://jchi100.github.io/Visualizing_Earthquake/"><span
+  style='color:#365F91'>Visualizing USGS Earthquake Data</span></a><o:p></o:p></span></b></p>
+  </td>
+  <td width=98 valign=top style='width:58.95pt;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;border-left:none;border-bottom:solid #4BACC6 1.0pt;
+  mso-border-bottom-themecolor:accent5;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:11.0pt;color:#4BACC6'><a
+  href="https://github.com/jchi100/jchi100.github.io/tree/master/Visualizing_Earthquake"><span
+  style='color:#4BACC6'>[Source]</span></a><o:p></o:p></span></b></p>
+  </td>
+  <td width=203 valign=top style='width:121.5pt;border-top:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;border-left:none;border-bottom:solid #4BACC6 1.0pt;
+  mso-border-bottom-themecolor:accent5;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'>D3, Leaflet, <span class=SpellE>Geojson</span></p>
+  </td>
+  <td width=398 valign=top style='width:238.5pt;border:solid #4BACC6 1.0pt;
+  mso-border-themecolor:accent5;border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-.25in;line-height:normal;mso-list:l1 level1 lfo4;mso-yfti-cnfc:
+  64'><![if !supportLists]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt'>Radio button to change map style<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-.25in;line-height:normal;mso-list:l1 level1 lfo4;mso-yfti-cnfc:
+  64'><![if !supportLists]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt'>Checkbox to show map feature<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-.25in;line-height:normal;mso-list:l1 level1 lfo4;mso-yfti-cnfc:
+  64'><![if !supportLists]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt'>Click bubble to show data details<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-.25in;line-height:normal;mso-list:l1 level1 lfo4;mso-yfti-cnfc:
+  64'><![if !supportLists]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt'>Use +/- or mouse to zoom<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;height:25.8pt'>
+  <td width=338 valign=top style='width:202.95pt;border-top:none;border-left:
+  solid #4BACC6 1.0pt;mso-border-left-themecolor:accent5;border-bottom:solid #0099CC 1.5pt;
+  border-right:none;mso-border-top-alt:solid #4BACC6 1.0pt;mso-border-top-themecolor:
+  accent5;padding:0in 5.4pt 0in 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:4'><b><span style='font-size:12.0pt;mso-bidi-font-size:
+  11.0pt'><a href="https://jchi100.github.io/Data_Visualization_Dashboard/"><span
+  style='color:#365F91'>Weather Data Visualization</span></a><span
+  style='color:#365F91'><o:p></o:p></span></span></b></p>
+  </td>
+  <td width=98 valign=top style='width:58.95pt;border:none;border-bottom:solid #0099CC 1.5pt;
+  mso-border-top-alt:solid #4BACC6 1.0pt;mso-border-top-themecolor:accent5;
+  padding:0in 5.4pt 0in 5.4pt;height:25.8pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span class=MsoHyperlink><span
+  style='color:#4BACC6'><a
+  href="https://github.com/jchi100/jchi100.github.io/tree/master/Data_Visualization_Dashboard"><span
+  style='color:#4BACC6'>[</span><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt;color:#4BACC6'>Source] </span></b></a></span></span><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  11.0pt;color:#4BACC6'><o:p></o:p></span></b></p>
+  </td>
+  <td width=203 valign=top style='width:121.5pt;border:none;border-bottom:solid #0099CC 1.5pt;
+  mso-border-top-alt:solid #4BACC6 1.0pt;mso-border-top-themecolor:accent5;
+  padding:0in 5.4pt 0in 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span class=SpellE>Javascript</span> Bootstrap</p>
+  </td>
+  <td width=398 valign=top style='width:238.5pt;border-top:none;border-left:
+  none;border-bottom:solid #0099CC 1.5pt;border-right:solid #4BACC6 1.0pt;
+  mso-border-right-themecolor:accent5;mso-border-top-alt:solid #4BACC6 1.0pt;
+  mso-border-top-themecolor:accent5;padding:0in 5.4pt 0in 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Rutger's Data Science Boot Camp May 2018</p>
-</footer>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
 
 </body>
-</html>
 
+</html>
